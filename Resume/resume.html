@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!-- https://novoresume.com/career-blog/resume-examples -->
+<html lang="en">
+
+<head>
+    <style>
+        @font-face {
+            font-family: ubuntu;
+            src: url(Ubuntu.ttf);
+        }
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        body {
+            font-family: ubuntu;
+            width: 21cm;
+            min-height: 29.7cm;
+            font-size: 14px;
+            padding: 15px;
+        }
+        
+        .container {
+            width: 100%;
+        }
+        
+        .header {
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 2px solid #4f91ca;
+        }
+        
+        .header .left {
+            float: left;
+            width: 75%;
+        }
+        
+        .header .right {
+            float: left;
+        }
+        
+        .header .right ul {
+            padding: 0;
+        }
+        
+        .header .right li {
+            list-style: none;
+            text-align: right;
+            line-height: 22px;
+        }
+        
+        h1.name {
+            color: #6a6f85;
+            margin: 0;
+            font-size: 21px;
+        }
+        
+        h3 {
+            color: #4f91ca;
+            margin: 5px 0;
+            font-size: 14px;
+            font-weight: 500
+        }
+        
+        .summary {
+            width: 90%;
+            display: block;
+        }
+        
+        .icon {
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-size: 16px!important;
+            margin-left: 5px;
+            margin-top: 4px;
+            float: right;
+        }
+        
+        .icon.mail {
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAwdJREFUaEPtl01IlEEYx3/zuuamayRJWlkoZBgVuOohiG4pdYgSO4qdo+iomxBtRGpeBa9JREdT7FJ2C6GDX5fQ9JCkhYIRuepuuvtOjOtqrru27uyHxju3d5l55v+b//M8OyPY50Psc/1YAOl20HLAckDzBKwU0jxA7eWWA9pHqBkgugPtI6VIUaQZPzHLhZyh0TkZKVh0gNbhDgT3EqNAO0oHror7uwNoGe7E4I721okIIGUnDyrv7g4g5ICUqwiRaQioKsyhvOBgIiRFjTE272Pg2yKmXJviB2xAHA6EAEzeYnAcuKAiluZlcfmUA5tIbAMLSBiYWWT8hy8IJ+VnYBohrugBQDe+rNvYvc/BuKVi52fbqCnOxXEgIyFuLK+a9E95mFtaDcXrw7dSjz2rC2StPoCrog4pBW0jjcBTBBl2m0F1SS7HcjK1IOaW/PRPLaAgkFJiiHa8zmbcwqRtpDtxACGZrUNXEbwCkafq4tIJB2fz7XFBhOX7AogGXM7ejWBJAVDRW4dOY/AaKc6rTwWgQBRQLMOUksHZZUbnvJv5blBLU+XYlvVJA1C7uD85sP/uAurUZ0GOjeriQ2RnGjsy+Pwm76c8fF9cz3cp3iAC9biqfm1bmFSAYKcI1oWQLSAMJb6mJJej2ZHrYt7r590XD4srge35Hgk76QChTduGr4FUdXE4Q9VFkYOyI1vrYvKnjw9fl/BLqcR7MIwGmpw9O9qVMoBQXSB7EMa5v+sCwvIdcwIhbm7L97Q6ENrc/fEQdtsLMG6onwrXW+zsRn83e/H5G3BfXIil2JPTRv+1s6qLZyMPQT5SdbHeZkwQj2lyPkGI4CUhlpHSFAoX1DZ0HcTLdYB6XJV9sWhOXRuNRU3LYNnatOaq8Vimp76NxqVqF4vSmkK70Bl1qgUQfFJ2o26j6RiWA/+JA+rWZqYjgzb/CHXexOlRHr5rHI/6ltEzZJgn94T+gDFNc/lEJC0xvqH2BEZEERZAur2xHLAc0DwBK4U0D1B7ueWA9hFqBtj3DvwBXRGFQFqtD2cAAAAASUVORK5CYII=);
+        }
+        
+        .icon.mobile {
+            background: url(data:image/png;base64,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);
+        }
+        
+        .icon.location {
+            background: url(data:image/png;base64,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);
+        }
+        
+        .icon.linkedin {
+            background-size: 12px!important;
+            background-repeat: no-repeat!important;
+            opacity: 0.6;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAupJREFUaEPtmE1IVFEUx3/nmVaDUBRZi1aBFGEuxFpUIC6ichRKqBYFbWqVmzZ9zIiNMKMGQRBF0MemIMgIFR0LqZCQllFotLFFi1yktAjU1HwnnqM5OpN3BuM2xnurYfi/e/+/c8+957wrzD3hzj2ocxGRCnALcRlEeMj42A2uHx//rcuxHzLjp777LKq3gbxUf/KWfOcAkUPfcsz7jB3BizzOm/TmZy0r7TQFj+YmQCj+FKHWaE51F03VA0adZYEQ7h4B3WicV6gjGrxl1FkWCKGucUTWGOdVvURT9VWjzrJACMf7gRLzvG4tsZo2s86uwlsB7+hsWXJa1/3KVME2rh0ctWvPPJtwvnUtgcI+0LL0clXgBLHqJ+bh7CsSdSDyfAOT0/cRjiyw4EXekbpcNZ+oA8lPqKsERypwCSDuIBMFPbmYNsmWFwLYz4Blz/gfANTHI5mFwe0lWtObog0/249O78tojMV15FhrHjsKS5l2tyNsQVmdGEdcRIZwdJC8wHsilT/+NL5XB7xTxvwIjUSDqbBeAJQr5gGAWDCx4qGOzbDqMiKnjF2AMonoC8S5S/RwB8gCv/YBwl17gXaQTRlBJ4tU+2agY8HPc3/bBcDdijoDCOuzNj//wpeZb5Zo1afEMWozhZA20L/Rlr8jP7CbSOVPywDLiPviV5WTNAUfrVwAV/tpri5duQDeikznFa9sANEz/wZAGUF5iTCEI5OorgPKUMoRnMx3invPPoBKAyNFLdwpn0ox6jWTwmOQnRlC9NgFEB4QDZ5e0lx9ZzHqfFzylmRuAFc/2AWACmLB18bohuOvgEqjDh22C+BKEc1Vw0Zjoc6biHPOqFP9bhdgbDSQ0TVlOO7dflwwAqATdgFiVc7ibjKtyXB3I2hDBgBqGWC2nTY5y6JF9wHIIlq/P2j8FZiPgJ9Cfgql2w9Z7Cs/hfwU8lPI5rXK3M2cX8j8QpaUA1mc2X4vlGbv+IXML2TLLGS/ANqu/+OaeXs4AAAAAElFTkSuQmCC);
+        }
+        
+        .personal-info {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .details {
+            padding-top: 10px;
+            overflow: hidden;
+        }
+        
+        .details .left {
+            float: left;
+            width: 50%;
+            padding-right: 20px;
+        }
+        
+        .details .right {
+            float: left;
+            padding-left: 20px;
+            width: calc(50% - 40px);
+        }
+        
+        .block {
+            padding: 5px 0;
+            overflow: hidden;
+        }
+        
+        span.title-1 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        span.title {
+            display: block;
+            padding: 3px 0;
+        }
+        
+        span.title.title-2 {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        span.title.title-3 {
+            font-size: 16px;
+        }
+        
+        span.title.title-3 a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        span.title.title-4 {
+            font-style: italic;
+            color: #4f91ca;
+        }
+        
+        span.title.title-5 {
+            font-weight: 600;
+            font-size: 12px;
+        }
+        
+        .achievements ul {
+            padding-inline-start: 17px;
+        }
+        
+        .achievements li {
+            list-style: circle;
+            line-height: 20px;
+        }
+        
+        .achievements li::marker {
+            color: #4f91ca;
+        }
+        
+        .details .right .inner-block ul {
+            padding-inline-start: 0px;
+            margin: 5px 0px;
+        }
+        
+        .details .right .inner-block li {
+            list-style: none;
+            float: left;
+            padding: 5px;
+            background: #4f91ca;
+            margin: 2px 2px;
+            color: #FFF;
+            border-radius: 5px;
+        }
+        
+        .lang-block span.title {
+            display: block;
+        }
+        
+        .lang-block span.lang-perc {
+            display: block;
+            background: #4f91ca;
+            height: 16px;
+        }
+        
+        .lang-block span.lang-perc.full {
+            width: 100%;
+        }
+        
+        .lang-block span.lang-perc.half-plus-plus {
+            width: 90%;
+        }
+        
+        .lang-block span.lang-perc.half-plus {
+            width: 65%;
+        }
+        
+        .lang-block span.lang-perc.half {
+            width: 40%;
+        }
+        
+        .title-1.top-space {
+            padding-top: 10px;
+            display: block;
+        }
+        
+        span.pers-title {
+            margin-right: 10px;
+        }
+        
+        address {
+            margin-top: 4px;
+        }
+        
+        pre {
+            margin: 5px 0;
+        }
+        
+        .interests li {
+            background-color: #666!important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <h1 class="name">Libin Thomas</h1>
+                <h3>JavaScript Developer</h3>
+                <span class="summary">
+                    Grounded and solution-oriented JavaScript Developer with more than 10 years of professional experience.
+                    Adept at motivating self and others. Passionate about JavaScript and related frameworks.
+                </span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a class="personal-info" href="mailto:libin4646@hotmail.com">libin4646@hotmail.com<span class="icon mail"></span></a></li>
+                    <li><a class="personal-info" href="tel:8848889542">+91-8848889542<span class="icon mobile"></span></a></li>
+                    <li><a class="personal-info" href="https://www.google.co.in/maps/place/North+Paravur,+Kerala/@10.1427975,76.2213113,15z/data=!3m1!4b1!4m5!3m4!1s0x3b0810825b734d09:0x7fabaa540f2b9415!8m2!3d10.1446353!4d76.2272644?hl=en&authuser=0">
+                        Kochi, India<span class="icon location"></span></a></li>
+                    <li><a class="personal-info" href="https://www.linkedin.com/in/libinthomas/">linkedin.com/in/libinthomas<span class="icon linkedin"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="details">
+            <div class="left">
+                <span class="title-1">Work Experience</span>
+                <div class="block">
+                    <span class="title title-2">UI Engineer</span>
+                    <span class="title title-3"><a href="https://www.financial.com/">financial.com [May 2019 - Present]</a></span>
+                    <span class="title title-4">Achievements</span>
+                    <section class="achievements">
+                        <ul>
+                            <li>Work closely with product development by using JavaScript ES6 standards, HTML 5 & CSS 3</li>
+                            <li>Developed reusable widgets by using VueJS</li>
+                            <li>Analyzing and fixing bugs reported by the customers and internal QC team</li>
+                            <li>Develop and execute unit test cases</li>
+                            <li>Implemented WCAG web standards</li>
+                            <li>Implemented graphical visualizations with HighCharts and D3 frameworks</li>
+                            <li>Collaborate with other team members on design solutions and code reviews</li>
+                            <li>Working as part of an agile Scrum team with continuous improvement is a critical part of its success</li>
+                            <li>Assisting as a team leader of an internal Action Unit team</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="block">
+                    <span class="title title-2">Senior Project Leader</span>
+                    <span class="title title-3"><a href="https://www.assyst.net/">Assyst International [Jan 2011 - Apr 2019]</a></span>
+                    <span class="title title-4">Achievements</span>
+                    <section class="achievements">
+                        <ul>
+                            <li>Work as part of a team as well as working autonomously</li>
+                            <li>Contribute to improvements to the software development process</li>
+                            <li>Deploying applications, monitoring their performance, and maintaining them</li>
+                            <li>Most of the time worked as a full stack developer. At least one back-end Server framework like NodeJS, ExpressJS, .NET, SharePoint, etc</li>
+                            <li>Developed applications with different JavaScript front-end frameworks like AngularJS, VueJS, HandlebarsJS, ReactJS, etc</li>
+                            <li>NPM Package management</li>
+                            <li>Experience with additional aspects of client-side web development like performance tuning, security, SEO, etc</li>
+                            <li>Assisted in the development of software technical documentation</li>
+                            <li>Worked in maintenance activities</li>
+                            <li>Conducted internal training sessions</li>
+                        </ul>
+                    </section>
+                </div>
+                <span class="title-1">Education</span>
+                <div class="block">
+                    <span class="title title-2">B.E Computer Science & Engineering</span>
+                    <span class="title title-3"><a>St: Michael College of Engg. & Tech. [2006 - 2010]</a></span>
+                    <span class="title title-4">Anna University, Chennai</span>
+                </div>
+            </div>
+            <div class="right">
+                <span class="title-1">Technical Skills</span>
+                <div class="block">
+                    <span class="title title-5">Languages & Frameworks</span>
+                    <div class="inner-block">
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Angular JS 2+</li>
+                            <li>Vue JS</li>
+                            <li>Node JS</li>
+                            <li>Electron JS</li>
+                            <li>JQuery</li>
+                            <li>Jest</li>
+                            <li>Karma</li>
+                            <li>Webpack</li>
+                            <li>Gulp</li>
+                            <li>Bootstrap Vue</li>
+                            <li>Angular Material Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <span class="title title-5">IDE</span>
+                    <div class="inner-block">
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>Atom</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <span class="title title-5">Database Management</span>
+                    <div class="inner-block">
+                        <ul>
+                            <li>SQL Server 2008</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <span class="title title-5">Integration Tools</span>
+                    <div class="inner-block">
+                        <ul>
+                            <li>Git</li>
+                            <li>Jenkins</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <span class="title title-5">Project Management</span>
+                    <div class="inner-block">
+                        <ul>
+                            <li>JIRA</li>
+                            <li>PMS</li>
+                            <li>Confluence</li>
+                            <li>SharePoint</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <span class="title title-5">Others</span>
+                    <div class="inner-block">
+                        <ul>
+                            <li>Visual Studio</li>
+                            <li>R Studio</li>
+                            <li>SpectronJS</li>
+                            <li>Socket IO</li>
+                            <li>.NET MVC</li>
+                            <li>C#</li>
+                            <li>NeDB</li>
+                            <li>SharePoint</li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="title-1 top-space">Languages</span>
+                <div class="block">
+                    <div class="lang-block">
+                        <span class="title">Malayalam(Native)</span>
+                        <span class="lang-perc full"></span>
+                    </div>
+                    <div class="lang-block">
+                        <span class="title">English</span>
+                        <span class="lang-perc half-plus-plus"></span>
+                    </div>
+                    <div class="lang-block">
+                        <span class="title">Tamil</span>
+                        <span class="lang-perc half-plus"></span>
+                    </div>
+                    <div class="lang-block">
+                        <span class="title">Hindi</span>
+                        <span class="lang-perc half"></span>
+                    </div>
+                </div>
+                <span class="title-1 top-space">Personal</span>
+                <div class="block">
+                    <pre><span class="pers-title">Date of Birth:</span><i>01-OCT-1988</i></pre>
+                    <pre><span class="pers-title">Marital Status:</span><i>Married</i></pre>
+                    <pre><span class="pers-title">Address:</span><address>North Paravur, Ernakulam, 683513</address></pre>
+                </div>
+                <span class="title-1 top-space">Interests</span>
+                <div class="block">
+                    <div class="inner-block interests">
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Music</li>
+                            <li>Travelling</li>
+                            <li>Driving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
